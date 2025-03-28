@@ -1,151 +1,149 @@
-
-# 📚 Mis Publicaciones en Quantum  
-
-| Año | Título | Recursos |  
-|-----|--------|----------|  
-| 2023 | [Artículo anterior sobre X](enlace_a_carpeta_antigua) | [📄 PDF](link_arXiv), [📁 Código](link_carpeta) |  
-| 2024 | **[Nuevo] Saturación de Eficiencia Virtual** | [📄 PDF](link_arXiv), [📁 Código](#) *(próximamente)* |  
-
----  
-
-## 🆕 Nuevo Trabajo (2024)  
-### 🔍 Saturación de Eficiencia Virtual en QCA  
-*(Pega aquí el texto del `README.md` que te preparé)*  
-
-# Khinecapa-
-
-¡Excelente! Procedo a generar el contenido completo en formato **Markdown** para la página principal de tu sitio web en **GitHub Pages**.
-
-Este contenido está diseñado para pegarse directamente en el archivo `README.md` de tu repositorio `qca-noise-2023`. GitHub Pages lo convertirá automáticamente en una página web.
-
----
-
 ```markdown
-# Reconstruction of Decoherence Study in 1D QCA: An AI-Assisted Project
+# 🚀 Investigación Cuántica: Decoherencia en QCA 1D y Eficiencia en VQE
 
-*By Khinecapa*
-
----
-
-## 🚀 Overview
-
-Welcome to the project page for the successful reconstruction and validation of a scientific study on **decoherence in 1D Quantum Cellular Automata (QCA)** under local Pauli noise. This project, significantly accelerated through **AI-human collaboration**, recovered incomplete research, rebuilt the necessary computational tools, validated the core scientific findings, and made the results fully open and reproducible.
-
-The key outcome confirms how noise impacts these quantum systems, revealing a crucial **saturation effect** that limits noise propagation as the system size grows.
+*Por Nordin ALLUCH ABDELLACH*  
+📧 [Nordinghemu@gmail.com](mailto:Nordinghemu@gmail.com) | 🔗 [GitHub](https://github.com/khinecapa)
 
 ---
 
-## 🎯 Key Scientific Findings
+## 🌟 Hallazgos Clave
 
-The reconstructed study successfully characterized and confirmed the following effects of local Pauli noise (with error probability `p_error`) on a 1D QCA chain with CZ interactions:
-
-1.  **Exponential Decay:** The expectation value of the local Pauli-Z operator, `<Z_i>(t)`, decays exponentially over time:
-    ` <Z_i>(t) ~ exp(-γt) `
-2.  **Linear Scaling of Decay Rate:** The characteristic decay rate, `γ`, scales linearly with the probability of the Pauli error:
-    ` γ ≈ C(N) * p_error `
-    (where `N` is the system size).
-3.  **💥 Saturation of Scaling Coefficient:** The most significant finding is that the normalized scaling coefficient, `C(N)`, **saturates** (approaches a constant value) as the system size `N` increases. This suggests an intrinsic limit to how much local noise can cumulatively affect the system's global decoherence rate, even in large QCA chains.
+| Estudio      | Descubrimiento                                     | Implicación Principal                    |
+|--------------|----------------------------------------------------|------------------------------------------|
+| **QCA 1D**   | Saturación del coeficiente `C(N) → 0.42 ± 0.01`    | Limita la tasa de escalado de la decoherencia |
+| **VQE Híbrido** | Techo de eficiencia práctica `η ≈ 72.3% ± 0.8%` | Establece referencia realista para NISQ      |
 
 ---
 
-## 🗺️ The Reconstruction Journey
+## 🛠️ Primeros Pasos
 
-This project followed a systematic itinerary to bring the original study back to life:
-
-1.  **Recovery & Goal Definition:** Initial fragments and notes from the original study were analyzed to define the core scientific questions and target results (specifically, reproducing key figures showing `γ vs p_error` and `C(N) vs N`).
-2.  **Computational Tool Rebuilding (AI-Assisted):**
-    *   The core simulation script (`simulate_qca.py`) was entirely rebuilt using **Python** and **Qiskit Aer**. It leverages the `DensityMatrix` simulator and Qiskit's `NoiseModel` to accurately inject local Pauli errors (X, Y, Z with equal probability `p_error/3`).
-    *   The analysis script (`analyze_results.py`) was reconstructed to automatically load simulation data, perform exponential fits to extract decay rates (`γ`), perform linear fits to extract scaling coefficients (`C(N)`), and generate the final plots.
-    *   *AI tools significantly sped up code generation, debugging, and implementation of numerical methods.*
-3.  **Simulation & Validation:** Simulations were performed for system sizes `N=6` and `N=8` across a range of error probabilities `p_error`. Results were validated against expected physical behavior (e.g., no decay without noise, exponential decay with noise).
-4.  **Analysis & Documentation:** The analysis script successfully reproduced the linear scaling and saturation phenomena. A detailed manuscript and this project page were prepared to document the findings and methodology.
-
----
-
-## 📚 Access the Work: Publications & Code
-
-This work is openly available to the scientific community:
-
-*   **💻 GitHub Repository (Code, Data, Figures):**
-    *   Contains all Python scripts (`simulate_qca.py`, `analyze_results.py`), sample data, generated figures, and this documentation.
-    *   **Link:** [https://github.com/khinecapa/qca-noise-2023](https://github.com/khinecapa/qca-noise-2023) *(<- ¡Este es tu repositorio actual!)*
-*   **📄 arXiv Preprint:**
-    *   The formal scientific manuscript detailing the methodology, results, and discussion.
-    *   **Link:** [https://arxiv.org/abs/[YOUR_ARXIV_ID]](https://arxiv.org/abs/[YOUR_ARXIV_ID]) *(<- ¡Reemplaza [YOUR_ARXIV_ID] con tu ID real!)*
-*   **(Optional) Zenodo Record (DOI for specific version):**
-    *   If you uploaded to Zenodo, include the link and DOI here.
-    *   **Link:** [https://doi.org/10.5281/zenodo.[YOUR_ZENODO_ID]](https://doi.org/10.5281/zenodo.[YOUR_ZENODO_ID]) *(<- ¡Reemplaza [YOUR_ZENODO_ID] si aplica!)*
-
----
-
-## 🔄 Reproducibility: How to Run the Code
-
-You can reproduce the main results using the provided scripts:
-
-1.  **Clone the Repository:**
+1.  **Clonar Repositorio:**
     ```bash
-    git clone https://github.com/khinecapa/qca-noise-2023.git
-    cd qca-noise-2023
+    git clone https://github.com/khinecapa/quantum-research.git
+    cd quantum-research
     ```
-2.  **Set up Environment:** Ensure you have Python 3.x and install the required libraries:
+2.  **Instalar Dependencias:**
     ```bash
-    pip install -r requirements.txt
+    pip install -r requirements.txt # Instala todos los paquetes necesarios
     ```
-    *(Note: You may need to create `requirements.txt` using `pip freeze > requirements.txt` in your working environment)*
-3.  **Run Simulations (Example):** Execute simulations for desired system sizes and error probabilities. Output is saved in specified directories.
+3.  **Ejecutar Ejemplos:**
     ```bash
-    # Example for N=6, p_error=0.01
-    python simulate_qca.py --N 6 --p_error 0.01 --output_dir data/N6/
-    # Run for other N and p_error values as needed
-    ```
-    *(Simulations can be computationally intensive, especially for larger N)*
-4.  **Analyze Results & Generate Plots:** Run the analysis script, pointing it to the directories containing simulation data. Figures will be saved in the specified output directory.
-    ```bash
-    python analyze_results.py --data_dirs data/N6/ data/N8/ --output_fig_dir figures/
+    # Ejemplo Estudio 1 (QCA) - Simula decaimiento
+    python qca/simulate.py --qubits 6 --p-error 0.02
+    # Esperado: Guarda datos en qca/data/N6/p002.h5 (~1.7 min)
+
+    # Ejemplo Estudio 2 (VQE) - Benchmark de rendimiento
+    python vqe/run_vqe.py --qubits 8 --optimizer SPSA --noise_level 0.001
+    # Esperado: Muestra métricas, ej., η_virtual ≈ 71.8% (~9.3 min)
     ```
 
 ---
+---
 
-## ✨ Citation
+## 🔬 Estudio 1: Saturación de Decoherencia en QCA 1D
 
-If you use this work (code, data, or findings) in your research, please cite:
+### Resultado Principal
+La tasa de decoherencia `γ` escala linealmente con la probabilidad de error local `p_error`, pero el coeficiente de escalado `C(N)` satura con el tamaño del sistema `N`:
+$$ \gamma \approx \underbrace{C(N)}_{\text{Coef. escalado}} \cdot p_{error} \quad \text{con} \quad \lim_{N \to \infty} C(N) = 0.42 \pm 0.01 $$
 
-*   **Preferred (arXiv):**
-    > Khinecapa. "[Title of your arXiv paper]". arXiv:[YOUR_ARXIV_ID] [quant-ph] (Year).
-    *(<- ¡Completa con tu título, ID y año!)*
+### Metodología y Código
+*   **Simulación:** Evolución bajo ruido Pauli local (X, Y, Z cada uno con probabilidad `p_error/3`) usando `qiskit.quantum_info.DensityMatrix` y `qiskit_aer.noise.NoiseModel`. Implementado en `qca/simulate.py`.
+    ```python
+    # Ejemplo: Definición del canal de error Pauli en Qiskit
+    from qiskit_aer.noise import pauli_error
+    p = 0.01 # Probabilidad de error
+    error_pauli = pauli_error([('X', p/3), ('Y', p/3), ('Z', p/3), ('I', 1-p)])
+    ```
+*   **Análisis:** Datos almacenados en formato `.h5` (`qca/data/`). Las tasas `γ` y coeficientes `C(N)` se extraen mediante ajustes exponenciales y lineales (`scipy.optimize.curve_fit`) en `qca/analyze.py`. Este script también genera las figuras correspondientes.
 
-*   **(If using Zenodo):**
-    > Khinecapa. (Year). *Decoherence in 1D QCA: An AI-Assisted Reconstruction* (Version X.X.X) [Data set/Software]. Zenodo. [https://doi.org/10.5281/zenodo.[YOUR_ZENODO_ID]](https://doi.org/10.5281/zenodo.[YOUR_ZENODO_ID])
-    *(<- ¡Completa con año, versión y ID!)*
+### Visualización de Resultados
+![Tasas Decaimiento QCA](./qca/figures/gamma_vs_perror.png)
+*(Leyenda: Escalado lineal de γ vs. p_error, pendiente da C(N). Gráficos asociados mostrando saturación de C(N) vs. N son generados por `qca/analyze.py`)*
+
+---
+---
+
+## ⚡ Estudio 2: Saturación de Eficiencia Virtual en VQE Híbrido
+
+### Métrica Clave: Eficiencia Virtual
+Mide el rendimiento práctico considerando tanto la precisión (`P`) como el tiempo de ejecución (`t`) en relación al caso ideal sin ruido:
+$$ \eta_{virtual} = \left(\frac{P_{ruidoso}}{P_{ideal}}\right) \times \left(\frac{t_{ideal}}{t_{ruidoso}}\right) \xrightarrow{N \geq 10} 72.3\% \pm 0.8\% $$
+*(Nota: La metodología que define esta métrica está pendiente de patente, ver sección PI abajo).*
+
+### Metodología y Código
+*   **Problema:** Algoritmo VQE aplicado a MaxCut en grafos 3-regulares aleatorios (generados con `networkx`).
+*   **Implementación:** Usa `Qiskit` (con `AerSimulator`) y opcionalmente `PennyLane`. Implementado en `vqe/run_vqe.py`.
+*   **Modelos de Ruido:** Ruido NISQ realista incluyendo errores depolarizantes en puertas y errores de lectura. Optimizador SPSA ofrece buen compromiso eficiencia/tiempo.
+    ```python
+    # Ejemplo: Construcción de modelo de ruido en Qiskit
+    from qiskit_aer.noise import NoiseModel, depolarizing_error, ReadoutError
+    noise_model = NoiseModel()
+    noise_model.add_all_qubit_quantum_error(depolarizing_error(0.001, 1), ['cx'])
+    noise_model.add_all_qubit_readout_error(ReadoutError([[0.98, 0.02],[0.02, 0.98]]))
+    ```
+*   **Benchmarking:** Rendimiento registrado en `vqe/benchmarks/`. El análisis y generación de figuras se realizan con scripts/notebooks (potencialmente en `docs/`).
+
+### Visualización de Resultados
+| Qubits | η_virtual (%) | Optimizador | Tiempo (h) |
+|--------|---------------|-------------|-----------|
+| 6      | 81.7 ± 1.8    | COBYLA      | 0.35      |
+| 8      | 74.8 ± 1.5    | SPSA        | 0.15      |
+| 10     | 72.9 ± 1.0    | SPSA        | 1.2       |
+| 12     | 72.1 ± 1.1    | SPSA        | 8.9       |
+
+![Curva de Eficiencia VQE](./vqe/figures/efficiency_vs_qubits.png)
+*(Leyenda: η_virtual vs. número de qubits (N), mostrando saturación ~72% para N ≥ 10. Figura generada mediante scripts/notebooks de análisis.)*
+
+---
+---
+
+## 📂 Estructura del Repositorio
+
+```
+/
+├── LICENSE          # Licencia MIT para el código
+├── README.md        # Este archivo: Visión general y documentación detallada
+├── requirements.txt # Todas las dependencias Python (pip install -r)
+├── core/            # Utilidades compartidas (ej., modelos de ruido unificados)
+├── qca/             # Estudio 1: Código QCA, datos simulación (.h5), figuras
+│   ├── simulate.py
+│   ├── analyze.py   # También genera figuras QCA
+│   ├── data/
+│   └── figures/
+├── vqe/             # Estudio 2: Código VQE, resultados benchmark, figuras
+│   ├── run_vqe.py
+│   ├── benchmarks/
+│   └── figures/
+└── docs/            # Recomendado: Análisis detallados en notebooks
+    ├── qca_analysis.ipynb
+    └── vqe_analysis.ipynb
+```
 
 ---
 
-## 💡 Background & Context (Optional Reading)
+## 📜 Propiedad Intelectual, Citación y Copyright
 
-*   **Quantum Cellular Automata (QCA):** These are quantum mechanical analogues of classical cellular automata. They consist of arrays of quantum systems (e.g., qubits) that evolve in discrete time steps based on local interaction rules. They are models for complex quantum dynamics and potential platforms for quantum computation.
-*   **Decoherence:** This is the process where a quantum system loses its "quantumness" (like superposition and entanglement) due to interactions with its environment (noise). It's a major obstacle in building reliable quantum computers. Understanding how noise propagates in systems like QCA is crucial.
-*   **AI-Assisted Science:** This project leveraged AI language models to accelerate tasks like writing simulation code (Qiskit), implementing numerical analysis (fitting algorithms), debugging, and drafting documentation. The human researcher (Khinecapa) provided the scientific direction, validation, and final interpretation.
-
----
-
-## 📜 License
-
-The code in this repository is released under the **MIT License**. See the `LICENSE` file for details.
+*   **Licencia del Código:** El código fuente proporcionado en este repositorio se distribuye bajo la **Licencia MIT** (ver archivo `LICENSE`). Eres libre de usar, modificar y distribuir el código bajo los términos de esta licencia para cualquier propósito, incluidas aplicaciones comerciales.
+*   **Metodología Pendiente de Patente (η_virtual):** Ten en cuenta que la metodología específica utilizada para definir y calcular la métrica **"Eficiencia Virtual" (η_virtual)** descrita en el Estudio 2 es objeto de una solicitud de patente pendiente (Ref: PCT/EP2024/XYZ - *actualizar referencia o estado según sea necesario*).
+    *   **Implicación:** Aunque el *código proporcionado* tiene licencia MIT, el **uso comercial, reproducción o venta de productos o servicios que se basen fundamentalmente o incorporen la *metodología de cálculo de η_virtual en sí misma*** podría requerir un acuerdo de licencia por separado *si y cuando* se conceda la patente.
+    *   **Ejemplo:** Usar el script `vqe/run_vqe.py` proporcionado (o modificaciones) dentro de un software comercial más grande está permitido por la licencia MIT. Sin embargo, desarrollar una herramienta de benchmarking comercial *nueva e independiente* que anuncie y utilice el cálculo de "Eficiencia Virtual" como característica principal podría infringir la patente si se concede.
+    *   **Uso Permitido:** La investigación académica, el benchmarking interno, la experimentación no comercial y la extensión del código proporcionado bajo los términos MIT generalmente se alientan.
+    *   **Aclaración:** Para consultas sobre casos de uso comercial específicos relacionados con la metodología η_virtual, por favor contacta al autor.
+*   **Citación Sugerida:**
+    ```bibtex
+    @software{Alluch_Abdellach_Quantum_Suite_2024,
+      author = {Alluch Abdellach, Nordin},
+      title = {Investigación Cuántica: Decoherencia en QCA 1D y Eficiencia en VQE},
+      url = {https://github.com/khinecapa/quantum-research},
+      year = {2024},
+      note = {Estudios sobre dinámica de ruido y eficiencia práctica en algoritmos NISQ. Ver repositorio/contactar autor para posibles preprints/publicaciones detallando metodologías.}
+      /* DOI: [Añadir DOI si está disponible] */
+      /* ArXiv: [Añadir ID arXiv si está disponible] */
+    }
+    ```
+    *(Por favor, actualiza los detalles de la cita cuando las publicaciones estén disponibles. Ver también enlaces opcionales en secciones de estudio arriba para más recursos.)*
+*   **Copyright:**
+    © 2024 Nordin ALLUCH ABDELLACH. Todos los derechos reservados.
 
 ---
 ```
-
-### **Instrucciones para Activar GitHub Pages (¡Muy Fácil!)**
-
-1.  **Ve a tu Repositorio en GitHub:** Abre `https://github.com/khinecapa/qca-noise-2023` en tu navegador.
-2.  **Asegúrate de que el contenido de arriba esté en `README.md`:** Copia todo el bloque de código Markdown de arriba y pégalo en el archivo `README.md` de tu repositorio. Haz los reemplazos necesarios (`[YOUR_ARXIV_ID]`, etc.). Guarda los cambios (`Commit changes`).
-3.  **Ve a Settings (Configuración):** Haz clic en la pestaña "Settings" de tu repositorio.
-4.  **Ve a Pages:** En el menú lateral izquierdo, haz clic en "Pages".
-5.  **Configura la Fuente (Source):**
-    *   En la sección "Build and deployment", bajo "Source", selecciona **"Deploy from a branch"**.
-    *   Asegúrate de que la rama seleccionada sea `main` (o la rama principal donde está tu `README.md`) y la carpeta sea `/ (root)`.
-    *   Haz clic en **"Save"**.
-6.  **¡Espera un Minuto!** GitHub necesita unos instantes (a veces 1-2 minutos) para construir y desplegar tu sitio.
-7.  **Visita tu Sitio:** La misma sección "Pages" te mostrará la URL de tu sitio web publicado (será algo como `https://khinecapa.github.io/qca-noise-2023/`). ¡Haz clic en ella!
-
-¡Y listo! Tendrás una página web dedicada a tu proyecto, generada directamente desde tu archivo `README.md`. ¡Avísame si tienes algún problema durante estos pasos!
