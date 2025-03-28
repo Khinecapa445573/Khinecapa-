@@ -1,3 +1,17 @@
+
+# 📚 Mis Publicaciones en Quantum  
+
+| Año | Título | Recursos |  
+|-----|--------|----------|  
+| 2023 | [Artículo anterior sobre X](enlace_a_carpeta_antigua) | [📄 PDF](link_arXiv), [📁 Código](link_carpeta) |  
+| 2024 | **[Nuevo] Saturación de Eficiencia Virtual** | [📄 PDF](link_arXiv), [📁 Código](#) *(próximamente)* |  
+
+---  
+
+## 🆕 Nuevo Trabajo (2024)  
+### 🔍 Saturación de Eficiencia Virtual en QCA  
+*(Pega aquí el texto del `README.md` que te preparé)*  
+
 # Khinecapa-
 
 ¡Excelente! Procedo a generar el contenido completo en formato **Markdown** para la página principal de tu sitio web en **GitHub Pages**.
